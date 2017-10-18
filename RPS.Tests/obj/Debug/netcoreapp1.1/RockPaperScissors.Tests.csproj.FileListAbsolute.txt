@@ -1,0 +1,4 @@
+/Users/Guest/Desktop/CSharp-RPS/RockPaperScissors.Tests/bin/Debug/netcoreapp1.1/RockPaperScissors.Tests.deps.json
+/Users/Guest/Desktop/CSharp-RPS/RockPaperScissors.Tests/bin/Debug/netcoreapp1.1/RockPaperScissors.Tests.runtimeconfig.json
+/Users/Guest/Desktop/CSharp-RPS/RockPaperScissors.Tests/bin/Debug/netcoreapp1.1/RockPaperScissors.Tests.runtimeconfig.dev.json
+/Users/Guest/Desktop/CSharp-RPS/RockPaperScissors.Tests/obj/Debug/netcoreapp1.1/RockPaperScissors.Tests.AssemblyInfo.cs
