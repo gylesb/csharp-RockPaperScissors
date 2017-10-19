@@ -11,19 +11,19 @@
       <h1>Rock, Paper, Scissors</h1>
 
 
-    <div class="formBox">
+    @* <div class="formBox">
       <form id="player1Name" class="name" method="post">
-        <label for="name">Please put player 1's name here:</label>
-        <input type="text" name="name" value="name">
       </form>
       <form id="player2Name" class="name" method="post">
-        <label for="name">Please put player 2's name here:</label>
-        <input type="text" name="name" value="name">
       </form>
+      <br> *@
 
 
-      <br>
       <form id="submitButton" class="submit" action="/player1" method="post">
+      <label for="name">Please put player 1's name here:</label>
+      <input type="text" name="player1Name">
+        <label for="name">Please put player 2's name here:</label>
+        <input type="text" name="player2Name">
         <button type="submit" name="btn" class="btn btn-info btn-block">~Play with another person by clicking here~</button>
       </form>
     </div>

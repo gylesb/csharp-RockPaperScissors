@@ -10,6 +10,17 @@ namespace RPS.Models
     private string _player1value;
     private string _player2value;
 
+    private static RPSchecker _checker = null;
+
+    public void Save()
+    {
+      _checker = this;
+    }
+
+    public static RPSchecker GetChecker()
+    {
+      return _checker;
+    }
 
     public string GetP1Name()
     {
