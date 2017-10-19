@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <title>RPS</title>
+</head>
+<style media="screen">
+  body {
+    background-image: url("../img/back.jpg");
+  }
+</style>
+<body>
+  <form id="player1Val" class="radio-btn" action="/player2" method="post">
+    <input type="radio" name="player1" value="1" checked> Rock<br>
+    <input type="radio" name="player1" value="2"> Paper<br>
+    <input type="radio" name="player1" value="3"> Scissors<br>
+    
+    <button type="submit" name="submit">Submit</button>
+  </form>
+</body>
+</html>

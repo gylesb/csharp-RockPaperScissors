@@ -16,7 +16,7 @@ namespace RPS.Tests
       RPSchecker newValue = new RPSchecker();
 
       //Action
-      var result = newValue.Game(1, 1);
+      var result = newValue.Game("1", "1");
       var expected = "IT'S A DRAW!";
 
       //Assert
@@ -30,7 +30,7 @@ namespace RPS.Tests
       RPSchecker newValue = new RPSchecker();
 
       //Action
-      var result = newValue.Game(1, 3);
+      var result = newValue.Game("1", "3");
       var expected = "Player 1 wins!";
 
       //Assert
@@ -44,7 +44,7 @@ namespace RPS.Tests
       RPSchecker newValue = new RPSchecker();
 
       //Action
-      var result = newValue.Game(2, 1);
+      var result = newValue.Game("2", "1");
       var expected = "Player 1 wins!";
 
       //Assert
@@ -58,7 +58,7 @@ namespace RPS.Tests
       RPSchecker newValue = new RPSchecker();
 
       //Action
-      var result = newValue.Game(3, 2);
+      var result = newValue.Game("3", "2");
       var expected = "Player 1 wins!";
 
       //Assert
@@ -72,11 +72,22 @@ namespace RPS.Tests
       RPSchecker newValue = new RPSchecker();
 
       //Action
-      var result = newValue.Game(2, 3);
+      var result = newValue.Game("2", "3");
       var expected = "Player 2 wins!";
 
       //Assert
       Assert.AreEqual(expected, result);
     }
+
+    [TestMethod]
+    public void CheckThatPlayer1HasName()
+    {
+      RPSchecker newRps = new RPSchecker();
+      newRps.SetP1Name("Steve");
+
+      Assert.AreEqual("Steve", newRps.GetP1Name());
+
+    }
+
   }
 }
